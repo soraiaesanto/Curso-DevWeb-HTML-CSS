@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multimédia em HMTL5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir o site em dispostivos diferentes ou simplesmente aumente e diminua o tamanho do navegador.</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/Untitled-1.png" type="image/png">
+        <source media="(max-width: 1050px )" srcset="imagens/Untitled-2-Recovered.png" type="image/png">
+        <img src="imagens/Untitled-3-Recovered.png" alt="Imagem flexível">
+    </picture>
+
+    <h1>Reproduzindo áudio</h1>
+    <p>Vamos agora aprender a anexar um áudio ao site em html.</p>
+
+    <audio preload="metadata" controls>
+        <source src="multimédia/Next Steps - half.cool.mp3" type="audio/mpeg">
+        <source src="multimédia/Next Steps - half.cool.wav" type="audio/wav">
+        <source src="multimédia/Next Steps - half.cool.ogg" type="audio/ogg">
+        <p>Infelizmente o seu navegador não consegue reproduzir áudio. Clique <a href="multimédia/Next Steps - half.cool.mp3">aqui</a> para baixar o arquivo.</p>
+    </audio>
+</body>
+</html>
